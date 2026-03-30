@@ -1,0 +1,112 @@
+@import "tailwindcss";
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Sora:wght@600;700;800&display=swap');
+
+*{
+  padding:0;
+  box-sizing:border-box;
+  margin:0;
+}
+
+html,
+body{
+  width:100%;
+  min-height:100%;
+  overflow-x: hidden;
+}
+
+body{
+  font-family:'Manrope', sans-serif;
+  color:#f4f8ff;
+  background:#09152a;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family:'Sora', sans-serif;
+  letter-spacing: -0.01em;
+  font-weight: 800;
+}
+
+#root {
+  width: 100%;
+  max-width: 100vw;
+  min-height: 100vh;
+  min-height: 100dvh;
+  overflow-x: hidden;
+}
+
+button {
+  font-family: 'Manrope', sans-serif;
+}
+
+/* Scrollbar styling */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: rgba(255, 255, 255, 0.08);
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(26, 115, 232, 0.4);
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(26, 115, 232, 0.6);
+}
+
+/* === Global Zego UI Kit Theme - White & Blue === */
+.zmg-prebuilt__wrapper {
+  background: linear-gradient(135deg, #f8fafd 0%, #f0f4f8 50%, #eaf0f7 100%) !important;
+  color: #202124 !important;
+}
+
+.zmg-video-container {
+  background: linear-gradient(135deg, #f8fafd 0%, #f0f4f8 50%, #eaf0f7 100%) !important;
+}
+
+/* All buttons - blue theme */
+.zmg-common-button,
+.zmg-button,
+[class*="button"] {
+  background-color: #1a73e8 !important;
+  color: white !important;
+  border: none !important;
+}
+
+.zmg-common-button:hover,
+.zmg-button:hover,
+[class*="button"]:hover {
+  background-color: #185abc !important;
+}
+
+/* Hang up/end call button - stay red */
+[class*="hangup"],
+[class*="hang-up"],
+[class*="end-call"],
+button[aria-label*="end"],
+button[aria-label*="hang"],
+button[aria-label*="leave"] {
+  background-color: #ea4335 !important;
+  color: white !important;
+}
+
+[class*="hangup"]:hover,
+[class*="hang-up"]:hover,
+[class*="end-call"]:hover,
+button[aria-label*="end"]:hover,
+button[aria-label*="hang"]:hover,
+button[aria-label*="leave"]:hover {
+  background-color: #d93025 !important;
+}
